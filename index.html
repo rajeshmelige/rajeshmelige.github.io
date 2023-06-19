@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taxi Booking</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="datepicker.css">
+</head>
+<body>
+  <header>
+    <h1>Taxi Booking</h1>
+  </header>
+
+  <main>
+    <section id="booking-form">
+      <h2>Book a Taxi</h2>
+      <form>
+        <label for="pickup-location">Pickup Location:</label>
+        <input type="text" id="pickup-location" name="pickup-location" required>
+
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="text" id="pickup-date" name="pickup-date" required readonly>
+        
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="text" id="pickup-time" name="pickup-time" required readonly>
+
+        <label for="dropoff-location">Dropoff Location:</label>
+        <input type="text" id="dropoff-location" name="dropoff-location" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="datepicker.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
